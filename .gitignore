@@ -1,0 +1,13 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Maven
+target/
+mvnw
+mvnw.cmd
+.mvn/
+
+# OS
+.DS_Store
+Thumbs.db
