@@ -23,7 +23,10 @@ target/
 /nbproject/private/
 /nbbuild/
 /dist/
-/nbdist/
+/nbdist/!mvnw
+!.mvn/
+!.mvn/**
+!/.mvn/wrapper/maven-wrapper.jar
 /.nb-gradle/
 build/
 !**/src/main/**/build/
