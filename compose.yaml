@@ -2,9 +2,8 @@ services:
   products-service:
     build: ./products-service
     ports:
-      # - "8080"
-      # - "8082:8080"
-      - "8082-8085:8080"
+      - "8082:8080"
+      # - "8083-8085:8080"
     networks:
       - anarchy-net
 
@@ -14,7 +13,7 @@ services:
       - "8081:8080"
     environment:
       # Internal communication inside Docker network uses container port (8080)
-      - APPLICATION_CONFIG_PRODUCTS_URL=http://products-service-1:8080
+      - APPLICATION_CONFIG_PRODUCTS_URL=http://products-service:8080
     networks:
       - anarchy-net
     depends_on:
